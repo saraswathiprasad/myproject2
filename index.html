@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Tourism</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/destinations">Destinations</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/booking">Booking</a>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Your Next Adventure</h2>
+        <p>Travel to breathtaking destinations with our curated experiences.</p>
+        <section class="cards">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/bali.jpg') }}" alt="Bali">
+                <h3>Bali, Indonesia</h3>
+                <p>Experience tropical vibes and serene beaches.</p>
+                <a href="/booking" class="book-btn">Book Now</a>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/paris.jpg') }}" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>Enjoy romance, art, and exquisite cuisine.</p>
+                <a href="/booking" class="book-btn">Book Now</a>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/newyork.jpg') }}" alt="New York">
+                <h3>New York, USA</h3>
+                <p>The city that never sleeps awaits you!</p>
+                <a href="/booking" class="book-btn">Book Now</a>
+            </div>
+        </section>
+        
+    </section>
+</body>
+</html>
